@@ -17,6 +17,7 @@ if "messages" not in st.session_state.keys(): # Initialize the chat message hist
     ]
 
 # Load and index data
+@st.cache(ttl=24*3600)
 @st.cache_resource(show_spinner=False)
 def load_data():
     with st.spinner(text="Loading – hang tight! This should take 1-2 minutes."):
