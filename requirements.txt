@@ -1,12 +1,3 @@
-# Import the required libraries
-import streamlit as st
-from llama_index import VectorStoreIndex, ServiceContext, Document
-from llama_index.chat_engine import CondenseQuestionChatEngine
-from llama_index.llms import OpenAI
-import openai
-from llama_index import StorageContext, load_index_from_storage
-from PIL import Image
-
 llama-index==0.8.48
 openai==0.28.1
 Pillow==9.4.0
